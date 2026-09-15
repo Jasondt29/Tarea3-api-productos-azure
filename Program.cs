@@ -6,6 +6,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddSingleton<ApiProductos.Data.DapperContext>();
 builder.Services.AddScoped<ApiProductos.Repositories.IProductoRepository, ApiProductos.Repositories.ProductoRepository>();
+builder.Services.AddScoped<ApiProductos.Services.MathService>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
